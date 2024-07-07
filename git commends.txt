@@ -58,7 +58,14 @@ $ git log --since=2.months
 $ git log --pretty=format:"%H -- %an"
 # Displays each commit with its full hash and author name in a custom format.
 
+$ git restore --staged git_config.txt
+# Unstages the file 'git_config.txt', keeping the file in the working directory unchanged.
 
+$ git log -p -1
+# Shows the diff (changes) for the most recent commit.
+
+$ git checkout -- git_config.txt
+# Discards changes in the working directory for 'git_config.txt', reverting it to the last committed version.
 
 # Contents of .gitignore file:
 # .gitignore file
