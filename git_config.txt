@@ -218,7 +218,7 @@ jay90@DELL MINGW64 /d/jay programings/git/faist (master)
 $ gti commit -m "Changes text.txt and added some more details"
 bash: gti: command not found
 
-jay90@DELL MINGW64 /d/jay programings/git/faist (master)
+ jay90@DELL MINGW64 /d/jay programings/git/faist (master)
 $ git commit -m "Changes text.txt and added some more details"
 [master 2ebfcf1] Changes text.txt and added some more details
  1 file changed, 2 insertions(+), 1 deletion(-)

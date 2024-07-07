@@ -162,3 +162,17 @@ origin  https://github.com/tech-skil/git-practice.git (push)
 
 $ git push -u origin master
 # Pushes the local 'master' branch to the 'origin' remote and sets up tracking.
+
+#git alias
+
+$ git config --global alias.st status
+# Creates a global Git alias 'st' for the 'status' command.
+
+$ git st
+# Uses the newly created alias to run 'git status'.
+
+$ git config --global alias.unstage 'restore --staged'
+# Creates a global Git alias 'unstage' for the 'restore --staged' command.
+
+$ git unstage git_config.txt
+# Uses the newly created alias to unstage the file 'git_config.txt'.
