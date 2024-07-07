@@ -1,3 +1,50 @@
+$ git status
+# Shows the current status of the working directory and staging area.
+$ git config --global user.name "Jayanth"
+# Sets the global Git username to "Jayanth".
+$ git config --global user.email "jayanthjay295@gmail.com"
+# Sets the global Git email to "jayanthjay295@gmail.com".
+$ git config --list
+# Lists all the Git configuration settings.
+$ git config --global core.editor emacs
+# Sets the global Git editor to Emacs.
+$ git config --global core.editor vim
+# Sets the global Git editor to Vim.
+$ git config user.name
+# Displays the current Git username.
+$ git config --list > git_config.txt
+# Saves the list of all Git configuration settings to a file named git_config.txt.
+$ git init
+# Initializes a new Git repository.
+$ git add -a
+# Incorrect command. Use `$ git add -A` to add all changes to the staging area.
+$ git add --a
+# Incorrect command. Use `$ git add -A` to add all changes to the staging area.
+$ git commit -m
+# Incorrect usage. The `-m` flag requires a commit message.
+$ git commit -m "Initial commit"
+# Commits the staged changes with the message "Initial commit".
+$ git log
+# Shows the commit history.
+$ q
+# Exits the git log view.
+$ git add first.txt
+# Adds the file first.txt to the staging area.
+$ git commit -m "Changes text.txt and added some more details"
+# Commits the staged changes with the message "Changes text.txt and added some more details".
+$ rm -rf .git
+# Removes the .git directory, effectively deleting the Git repository.
+$ git clone https://github.com/devmuhib/MernStack-Tour-Management.git
+# Clones the repository from the provided URL to the current directory.
+$ git clone https://github.com/devmuhib/MernStack-Tour-Management.git projecttravel
+# Clones the repository from the provided URL to a directory named 'projecttravel'.
+$ ls
+# Lists the files and directories in the current directory.
+$ touch error.log
+# Creates an empty file named error.log.
+$ touch .gitignore
+# Creates an empty .gitignore file to specify intentionally untracked files to ignore.
+
 $ touch error.log
 # Creates a new empty file named "error.log". Think of it as "touching" a file into existence.
 
@@ -66,6 +113,9 @@ $ git log -p -1
 
 $ git checkout -- git_config.txt
 # Discards changes in the working directory for 'git_config.txt', reverting it to the last committed version.
+
+$ git checkout -f
+# Forcefully discards all local changes and switches to the last committed state of the entire repository.
 
 # Contents of .gitignore file:
 # .gitignore file
