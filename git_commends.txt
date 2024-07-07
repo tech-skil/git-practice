@@ -133,6 +133,22 @@ $ git checkout -f
 
 # git remote repositories
 
+##Generate new ssh key
+
+$ ssh-keygen -t rsa -b 4096 -C "jayanthjay295@gmail.com"
+# Generates a new RSA SSH key pair with 4096 bits and the specified email as a comment.
+
+$ eval $(ssh-agent -s)
+# Starts the SSH agent and sets up the necessary environment variables.
+
+$ ssh-add ~/.ssh/id_rsa
+# Adds your SSH private key to the SSH agent for authentication.
+
+$ tail ~/.ssh/id_rsa.pub
+ssh-rsa SSH-Key jayanthjay295@gmail.com
+
+# Displays the contents of the public SSH key file.
+
 $ git remote
 # Lists the names of all remote repositories configured for the current project.
 
@@ -143,3 +159,6 @@ $ git remote -v
 origin  https://github.com/tech-skil/git-practice.git (fetch)
 origin  https://github.com/tech-skil/git-practice.git (push)
 # Lists all remote repositories with their URLs for fetching and pushing.
+
+$ git push -u origin master
+# Pushes the local 'master' branch to the 'origin' remote and sets up tracking.
