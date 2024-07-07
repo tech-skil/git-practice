@@ -178,3 +178,13 @@ $ git unstage git_config.txt
 # Uses the newly created alias to unstage the file 'git_config.txt'.
 
 #git branching
+
+$ git checkout -b developjay
+Switched to a new branch 'developjay'
+# Creates and switches to a new branch named 'developjay'.
+
+$ git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+# Switches to the 'master' branch and shows its status relative to the remote.
+
