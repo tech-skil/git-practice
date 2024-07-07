@@ -1,0 +1,75 @@
+$ touch error.log
+# Creates a new empty file named "error.log". Think of it as "touching" a file into existence.
+
+$ touch .gitignore
+# Creates a new empty file named ".gitignore". This special file tells Git which files to ignore.
+
+$ git diff
+# Shows what changes you've made but haven't yet staged or committed.
+
+$ git diff --staged
+# Shows changes that have been staged but not yet committed.
+
+
+$ git commit -a -m "Direct commit"
+# Stages all modified files and commits them with the message "Direct commit".
+
+
+$ git rm neet/dir/gh.txt
+rm 'neet/dir/gh.txt'
+# Removes the file 'gh.txt' from both the working directory and the Git repository.
+
+
+$ git mv first.txt first_rename.txt
+# Renames 'first.txt' to 'first_rename.txt' and stages this change for the next commit.
+
+
+$ git rm --cached db.accdb
+rm 'db.accdb'
+# Removes 'db.accdb' from Git tracking without deleting it from the local filesystem.
+
+$ git log -p
+# Shows the commit history along with the diff (changes) introduced in each commit.
+
+
+$ git log --stat
+# Shows the commit history with a summary of file changes for each commit.
+
+$ git log --pretty=oneline
+# Displays each commit on a single line, showing the full commit hash and commit message.
+
+$ git log --pretty=full
+# Shows commits with full commit message, author, and committer information.
+
+$ git log --pretty=short
+# Displays commits with a brief format showing the author and short commit message.
+
+
+$ git log --since=2.days
+# Shows commits made within the last 2 days.
+
+$ git log --since=2.years
+# Displays commits made within the last 2 years.
+
+$ git log --since=2.months
+# Lists commits made within the last 2 months.
+
+
+$ git log --pretty=format:"%H -- %an"
+# Displays each commit with its full hash and author name in a custom format.
+
+
+
+# Contents of .gitignore file:
+# .gitignore file
+# error.log
+# Tells Git to ignore the specific file named "error.log".
+
+*.log
+# Ignores all files that end with ".log". The star (*) means "any characters".
+
+# dir/
+# This line is commented out (inactive). If used, it would ignore a folder named "dir" anywhere in the project.
+
+/dir/
+# Ignores a folder named "dir", but only if it's in the root of the project. The leading slash (/) means "start from the root".

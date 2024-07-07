@@ -1,0 +1,6 @@
+# .gitignore file
+# error.log
+*.log
+# dir/
+/dir/ 
+db.accdb
