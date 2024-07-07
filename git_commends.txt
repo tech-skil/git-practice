@@ -130,3 +130,16 @@ $ git checkout -f
 
 /dir/
 # Ignores a folder named "dir", but only if it's in the root of the project. The leading slash (/) means "start from the root".
+
+# git remote repositories
+
+$ git remote
+# Lists the names of all remote repositories configured for the current project.
+
+$ git remote add origin https://github.com/tech-skil/git-practice.git
+# Adds a new remote named 'origin' pointing to the specified GitHub repository URL.
+
+$ git remote -v
+origin  https://github.com/tech-skil/git-practice.git (fetch)
+origin  https://github.com/tech-skil/git-practice.git (push)
+# Lists all remote repositories with their URLs for fetching and pushing.
